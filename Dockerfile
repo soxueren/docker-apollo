@@ -12,7 +12,7 @@ ENV VERSION=1.4.0 \
     UAT_CONFIG_PORT=8082 \
     PRO_CONFIG_PORT=8083
 
-ARG APOLLO_URL=https://github.com/soxueren/apollo/archive/v${VERSION}.tar.gz
+ARG APOLLO_URL=https://github.com/soxueren/apollo/archive/v1.4.2.tar.gz
 
 COPY docker-entrypoint /usr/local/bin/docker-entrypoint
 COPY healthcheck    /usr/local/bin/healthcheck
