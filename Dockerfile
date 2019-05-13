@@ -1,7 +1,7 @@
 FROM maven:alpine
 MAINTAINER Swire Chen <idoop@msn.cn>
 
-ENV VERSION=1.4.0 \
+ENV VERSION=1.4.1 \
     PORTAL_PORT=8070 \
     DEV_ADMIN_PORT=8090 \
     FAT_ADMIN_PORT=8091 \
@@ -12,7 +12,7 @@ ENV VERSION=1.4.0 \
     UAT_CONFIG_PORT=8082 \
     PRO_CONFIG_PORT=8083
 
-ARG APOLLO_URL=https://github.com/ctripcorp/apollo/archive/v${VERSION}.tar.gz
+ARG APOLLO_URL=https://github.com/soxueren/apollo/archive/v${VERSION}.tar.gz
 
 COPY docker-entrypoint /usr/local/bin/docker-entrypoint
 COPY healthcheck    /usr/local/bin/healthcheck
